@@ -1,0 +1,817 @@
+[
+
+    {
+        "id_stacji": "12295",
+        "stacja": "Bia³ystok",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+
+        "temperatura": "-1.4",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "170",
+        "wilgotnosc_wzgledna": "75.8",
+        "suma_opadu": "0",
+        "cisnienie": "1024.5"
+    },
+
+    {
+        "id_stacji": "12600",
+        "stacja": "Bielsko Bia³a",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "7.4",
+        "predkosc_wiatru": "5",
+        "kierunek_wiatru": "180",
+        "wilgotnosc_wzgledna": "38.6",
+        "suma_opadu": "0",
+        "cisnienie": "1026.6"
+    },
+
+    {
+        "id_stacji": "12235",
+        "stacja": "Chojnice",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.3",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "57.7",
+        "suma_opadu": "0",
+        "cisnienie": "1023.4"
+    },
+
+    {
+        "id_stacji": "12550",
+        "stacja": "Czêstochowa",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "49.7",
+        "suma_opadu": "0",
+        "cisnienie": "1025.6"
+    },
+
+    {
+        "id_stacji": "12160",
+        "stacja": "Elbl¹g",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "8.4",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "250",
+        "wilgotnosc_wzgledna": "39.8",
+        "suma_opadu": "0",
+        "cisnienie": "1022.2"
+    },
+
+    {
+        "id_stacji": "12155",
+        "stacja": "Gdañsk",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.2",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "230",
+        "wilgotnosc_wzgledna": "70.6",
+        "suma_opadu": "0",
+        "cisnienie": "1022"
+    },
+
+    {
+        "id_stacji": "12300",
+        "stacja": "Gorzów",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "7",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "48.7",
+        "suma_opadu": "0",
+        "cisnienie": "1022.9"
+    },
+
+    {
+        "id_stacji": "12135",
+        "stacja": "Hel",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.6",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "220",
+        "wilgotnosc_wzgledna": "65.5",
+        "suma_opadu": "0",
+        "cisnienie": "1022"
+    },
+
+    {
+        "id_stacji": "12500",
+        "stacja": "Jelenia Góra",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.9",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "110",
+        "wilgotnosc_wzgledna": "86.2",
+        "suma_opadu": "0",
+        "cisnienie": "1026"
+    },
+
+    {
+        "id_stacji": "12435",
+        "stacja": "Kalisz",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "6.3",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "130",
+        "wilgotnosc_wzgledna": "55.9",
+        "suma_opadu": "0",
+        "cisnienie": "1024"
+    },
+
+    {
+        "id_stacji": "12650",
+        "stacja": "Kasprowy Wierch",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "0.4",
+        "predkosc_wiatru": "5",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "14.8",
+        "suma_opadu": "0",
+
+        "cisnienie": null
+    },
+
+    {
+        "id_stacji": "12560",
+        "stacja": "Katowice",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.7",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "55.6",
+        "suma_opadu": "0",
+        "cisnienie": "1026.8"
+    },
+
+    {
+        "id_stacji": "12185",
+        "stacja": "Kêtrzyn",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.1",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "58.8",
+        "suma_opadu": "0",
+        "cisnienie": "1022.4"
+    },
+
+    {
+        "id_stacji": "12570",
+        "stacja": "Kielce",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-1.2",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "30",
+        "wilgotnosc_wzgledna": "81.8",
+        "suma_opadu": "0",
+        "cisnienie": "1027.2"
+    },
+
+    {
+        "id_stacji": "12520",
+        "stacja": "K³odzko",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.8",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "180",
+        "wilgotnosc_wzgledna": "56.8",
+        "suma_opadu": "0",
+        "cisnienie": "1026.1"
+    },
+
+    {
+        "id_stacji": "12345",
+        "stacja": "Ko³o",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "55.5",
+        "suma_opadu": "0",
+        "cisnienie": "1023.8"
+    },
+
+    {
+        "id_stacji": "12100",
+        "stacja": "Ko³obrzeg",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "7.2",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "180",
+        "wilgotnosc_wzgledna": "50.6",
+        "suma_opadu": "0",
+        "cisnienie": "1022"
+    },
+
+    {
+        "id_stacji": "12105",
+        "stacja": "Koszalin",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "140",
+        "wilgotnosc_wzgledna": "54.9",
+        "suma_opadu": "0",
+        "cisnienie": "1022.2"
+    },
+
+    {
+        "id_stacji": "12488",
+        "stacja": "Kozienice",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.8",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "75.9",
+        "suma_opadu": "0",
+        "cisnienie": "1025.5"
+    },
+
+    {
+        "id_stacji": "12566",
+        "stacja": "Kraków",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "260",
+        "wilgotnosc_wzgledna": "64.9",
+        "suma_opadu": "0",
+        "cisnienie": "1027"
+    },
+
+    {
+        "id_stacji": "12670",
+        "stacja": "Krosno",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.9",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "200",
+        "wilgotnosc_wzgledna": "41.5",
+        "suma_opadu": "0",
+        "cisnienie": "1027.5"
+    },
+
+    {
+        "id_stacji": "12415",
+        "stacja": "Legnica",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.4",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "150",
+        "wilgotnosc_wzgledna": "64.8",
+        "suma_opadu": "0",
+        "cisnienie": "1024.3"
+    },
+
+    {
+        "id_stacji": "12690",
+        "stacja": "Lesko",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.4",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "130",
+        "wilgotnosc_wzgledna": "42.7",
+        "suma_opadu": "0",
+        "cisnienie": "1028.5"
+    },
+
+    {
+        "id_stacji": "12418",
+        "stacja": "Leszno",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.3",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "140",
+        "wilgotnosc_wzgledna": "72.0",
+        "suma_opadu": "0",
+        "cisnienie": "1024"
+    },
+
+    {
+        "id_stacji": "12125",
+        "stacja": "Lêbork",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.5",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "150",
+        "wilgotnosc_wzgledna": "70.6",
+        "suma_opadu": "0",
+        "cisnienie": "1022.2"
+    },
+
+    {
+        "id_stacji": "12495",
+        "stacja": "Lublin",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.8",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "56.9",
+        "suma_opadu": "0",
+        "cisnienie": "1026"
+    },
+
+    {
+        "id_stacji": "12120",
+        "stacja": "£eba",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.8",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "67.5",
+        "suma_opadu": "0",
+        "cisnienie": "1021.8"
+    },
+
+    {
+        "id_stacji": "12465",
+        "stacja": "£ódŸ",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.5",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "60",
+        "wilgotnosc_wzgledna": "73.1",
+        "suma_opadu": "0",
+        "cisnienie": "1025.4"
+    },
+
+    {
+        "id_stacji": "12280",
+        "stacja": "Miko³ajki",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.2",
+        "predkosc_wiatru": "4",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "56.6",
+        "suma_opadu": "0",
+        "cisnienie": "1023.1"
+    },
+
+    {
+        "id_stacji": "12270",
+        "stacja": "M³awa",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.8",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "230",
+        "wilgotnosc_wzgledna": "61.8",
+        "suma_opadu": "0",
+        "cisnienie": "1023.7"
+    },
+
+    {
+        "id_stacji": "12660",
+        "stacja": "Nowy S¹cz",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.9",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "160",
+        "wilgotnosc_wzgledna": "61.6",
+        "suma_opadu": "0",
+        "cisnienie": "1027.8"
+    },
+
+    {
+        "id_stacji": "12272",
+        "stacja": "Olsztyn",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.1",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "54.7",
+        "suma_opadu": "0",
+        "cisnienie": "1022.8"
+    },
+
+    {
+        "id_stacji": "12530",
+        "stacja": "Opole",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.8",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "170",
+        "wilgotnosc_wzgledna": "63.7",
+        "suma_opadu": "0",
+        "cisnienie": "1025.5"
+    },
+
+    {
+        "id_stacji": "12285",
+        "stacja": "Ostro³êka",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.6",
+        "predkosc_wiatru": "0",
+        "kierunek_wiatru": "0",
+        "wilgotnosc_wzgledna": "78.8",
+        "suma_opadu": "0",
+        "cisnienie": "1024.1"
+    },
+
+    {
+        "id_stacji": "12230",
+        "stacja": "Pi³a",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2",
+        "predkosc_wiatru": "0",
+        "kierunek_wiatru": "0",
+        "wilgotnosc_wzgledna": "61.9",
+        "suma_opadu": "0",
+        "cisnienie": "1023.3"
+    },
+
+    {
+        "id_stacji": "12001",
+        "stacja": "Platforma",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+
+        "temperatura": null,
+        "predkosc_wiatru": "9",
+        "kierunek_wiatru": "270",
+
+        "wilgotnosc_wzgledna": null,
+        "suma_opadu": "0",
+
+        "cisnienie": null
+    },
+
+    {
+        "id_stacji": "12360",
+        "stacja": "P³ock",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.9",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "64.0",
+        "suma_opadu": "0",
+        "cisnienie": "1023.9"
+    },
+
+    {
+        "id_stacji": "12330",
+        "stacja": "Poznañ",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.2",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "62.6",
+        "suma_opadu": "0",
+        "cisnienie": "1023.2"
+    },
+
+    {
+        "id_stacji": "12695",
+        "stacja": "Przemyœl",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.9",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "99",
+        "wilgotnosc_wzgledna": "41.2",
+        "suma_opadu": "0",
+        "cisnienie": "1026.9"
+    },
+
+    {
+        "id_stacji": "12540",
+        "stacja": "Racibórz",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.6",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "220",
+        "wilgotnosc_wzgledna": "61.8",
+        "suma_opadu": "0",
+        "cisnienie": "1026.5"
+    },
+
+    {
+        "id_stacji": "12210",
+        "stacja": "Resko",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "1.6",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "140",
+        "wilgotnosc_wzgledna": "72.9",
+        "suma_opadu": "0",
+        "cisnienie": "1022.7"
+    },
+
+    {
+        "id_stacji": "12580",
+        "stacja": "Rzeszów",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.4",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "46.8",
+        "suma_opadu": "0",
+        "cisnienie": "1026.8"
+    },
+
+    {
+        "id_stacji": "12585",
+        "stacja": "Sandomierz",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.6",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "200",
+        "wilgotnosc_wzgledna": "47.6",
+        "suma_opadu": "0",
+        "cisnienie": "1026.1"
+    },
+
+    {
+        "id_stacji": "12385",
+        "stacja": "Siedlce",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "1.5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "180",
+        "wilgotnosc_wzgledna": "59.9",
+        "suma_opadu": "0",
+        "cisnienie": "1024.9"
+    },
+
+    {
+        "id_stacji": "12310",
+        "stacja": "S³ubice",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.7",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "170",
+        "wilgotnosc_wzgledna": "65.6",
+        "suma_opadu": "0",
+        "cisnienie": "1022.9"
+    },
+
+    {
+        "id_stacji": "12469",
+        "stacja": "Sulejów",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4",
+        "predkosc_wiatru": "4",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "56.6",
+        "suma_opadu": "0",
+        "cisnienie": "1025.5"
+    },
+
+    {
+        "id_stacji": "12195",
+        "stacja": "Suwa³ki",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.6",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "220",
+        "wilgotnosc_wzgledna": "77.1",
+        "suma_opadu": "0",
+        "cisnienie": "1023.5"
+    },
+
+    {
+        "id_stacji": "12205",
+        "stacja": "Szczecin",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.9",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "170",
+        "wilgotnosc_wzgledna": "67.9",
+        "suma_opadu": "0",
+        "cisnienie": "1022.5"
+    },
+
+    {
+        "id_stacji": "12215",
+        "stacja": "Szczecinek",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "0.7",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "180",
+        "wilgotnosc_wzgledna": "80.8",
+        "suma_opadu": "0",
+        "cisnienie": "1023.4"
+    },
+
+    {
+        "id_stacji": "12510",
+        "stacja": "Œnie¿ka",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.1",
+        "predkosc_wiatru": "12",
+        "kierunek_wiatru": "290",
+        "wilgotnosc_wzgledna": "50.7",
+        "suma_opadu": "0",
+
+        "cisnienie": null
+    },
+
+    {
+        "id_stacji": "12200",
+        "stacja": "Œwinoujœcie",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.2",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "61.7",
+        "suma_opadu": "0",
+        "cisnienie": "1022.1"
+    },
+
+    {
+        "id_stacji": "12575",
+        "stacja": "Tarnów",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "6.9",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "44.8",
+        "suma_opadu": "0",
+        "cisnienie": "1025.9"
+    },
+
+    {
+        "id_stacji": "12399",
+        "stacja": "Terespol",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.3",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "160",
+        "wilgotnosc_wzgledna": "90.2",
+        "suma_opadu": "0",
+        "cisnienie": "1025.3"
+    },
+
+    {
+        "id_stacji": "12250",
+        "stacja": "Toruñ",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "2.3",
+        "predkosc_wiatru": "0",
+        "kierunek_wiatru": "0",
+        "wilgotnosc_wzgledna": "70.9",
+        "suma_opadu": "0",
+        "cisnienie": "1023.2"
+    },
+
+    {
+        "id_stacji": "12115",
+        "stacja": "Ustka",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "7.4",
+        "predkosc_wiatru": "4",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "47.7",
+        "suma_opadu": "0",
+        "cisnienie": "1021.7"
+    },
+
+    {
+        "id_stacji": "12375",
+        "stacja": "Warszawa",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "3.6",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "200",
+        "wilgotnosc_wzgledna": "57.8",
+        "suma_opadu": "0",
+        "cisnienie": "1024.5"
+    },
+
+    {
+        "id_stacji": "12455",
+        "stacja": "Wieluñ",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5.5",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "190",
+        "wilgotnosc_wzgledna": "59.5",
+        "suma_opadu": "0",
+        "cisnienie": "1024.9"
+    },
+
+    {
+        "id_stacji": "12497",
+        "stacja": "W³odawa",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-0.2",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "210",
+        "wilgotnosc_wzgledna": "80.1",
+        "suma_opadu": "0",
+        "cisnienie": "1025.9"
+    },
+
+    {
+        "id_stacji": "12424",
+        "stacja": "Wroc³aw",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "5",
+        "predkosc_wiatru": "3",
+        "kierunek_wiatru": "220",
+        "wilgotnosc_wzgledna": "59.9",
+        "suma_opadu": "0",
+        "cisnienie": "1024.5"
+    },
+
+    {
+        "id_stacji": "12625",
+        "stacja": "Zakopane",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "-1.2",
+        "predkosc_wiatru": "1",
+        "kierunek_wiatru": "150",
+        "wilgotnosc_wzgledna": "73.0",
+        "suma_opadu": "0",
+
+        "cisnienie": null
+    },
+
+    {
+        "id_stacji": "12595",
+        "stacja": "Zamoœæ",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "4.4",
+        "predkosc_wiatru": "4",
+        "kierunek_wiatru": "230",
+        "wilgotnosc_wzgledna": "56.7",
+        "suma_opadu": "0",
+        "cisnienie": "1026.6"
+    },
+
+    {
+        "id_stacji": "12400",
+        "stacja": "Zielona Góra",
+        "data_pomiaru": "2025-03-20",
+        "godzina_pomiaru": "21",
+        "temperatura": "8.9",
+        "predkosc_wiatru": "2",
+        "kierunek_wiatru": "220",
+        "wilgotnosc_wzgledna": "43.7",
+        "suma_opadu": "0",
+        "cisnienie": "1023.4"
+    }
+]
+
+$.theater[*].movies

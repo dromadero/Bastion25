@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "Weather.Api\Weather.Api.csproj", "{50DDA518-E341-4B3D-B5D1-3088C6FB8804}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		info.txt = info.txt
+		synop.json = synop.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50DDA518-E341-4B3D-B5D1-3088C6FB8804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50DDA518-E341-4B3D-B5D1-3088C6FB8804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50DDA518-E341-4B3D-B5D1-3088C6FB8804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50DDA518-E341-4B3D-B5D1-3088C6FB8804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D662E5E0-AE58-4A04-8F8F-101711A5BBB0}
+	EndGlobalSection
+EndGlobal
