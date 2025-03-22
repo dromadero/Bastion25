@@ -1,5 +1,7 @@
-﻿using Weather.Api.Database;
+﻿using FluentValidation;
+using Weather.Api.Database;
 using Weather.Api.Repositories;
+using Weather.Api.Services;
 
 namespace Weather.Api;
 
@@ -8,6 +10,8 @@ public static class ApplicationServiceCollectionExtensions
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
         services.AddSingleton<IMeteoRepository, MeteoRepository>();
+        services.AddSingleton<IMeteoService, MeteoService>();
+        services.AddValidatorsFromAssemblyContaining<IApplicationMarker>(ServiceLifetime.Singleton);
         return services;
     }
 

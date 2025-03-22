@@ -20,18 +20,25 @@ public class DbInitializer
     {
         using var connection  = await _connectionFactory.CreateConnectionAsync();
         await connection.ExecuteAsync("""
-            create table if not exists stacjaMeteos (
-            id UUID primary key,
-            ll TEXT not null,
-            dd TEXT not null,
-            dfkjrk integer not null
+            create table if not exists meteos (
+            Id UUID primary key,
+            BusinessId integer not null,
+            Name TEXT not null,
+            DataPomiaru date not null,
+            GodzinaPomiaru integer not null,
+            Temperatura integer not null,
+            PredkoscWiatru integer not null,
+            KierunekWiatru integer not null,
+            WilgotnoscWzgledna decimal not null,
+            SumaOpadu decimal not null,
+            Cisnienie decimal not null 
             )
             """);
 
         await connection.ExecuteAsync("""
-            create unique index concurrently if not exists meteo_idx
-            on stacjaMeteos 
-            using btree(ll)
+            create unique index concurrently if not exists meteos_BusinessId_idx
+            on meteos 
+            using btree(BusinessId)
             """);
 
     }

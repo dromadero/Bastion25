@@ -1,10 +1,9 @@
 ﻿using Weather.Api.Models;
 
-namespace Weather.Api.Repositories;
+namespace Weather.Api.Services;
 
-public interface IMeteoRepository
+public interface IMeteoService
 {
-
     Task<bool> CreateAsync(StacjaMeteo item, CancellationToken token = default);
 
     Task<StacjaMeteo?> GetByIdAsync(Guid id, CancellationToken token = default);
@@ -13,9 +12,7 @@ public interface IMeteoRepository
 
     Task<IEnumerable<StacjaMeteo>> GetAllAsync(CancellationToken token = default);
 
+    Task<StacjaMeteo?> UpdateAsync(StacjaMeteo item, CancellationToken token = default);
+
     Task<bool> DeleteByIdAsync(Guid id, CancellationToken token = default);
-
-    Task<bool> UpdateAsync(StacjaMeteo item, CancellationToken token = default);
-
-    Task<bool> ExistsByIdAsync(Guid? id, int? businessId, CancellationToken token = default);
 }

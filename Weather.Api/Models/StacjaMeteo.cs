@@ -7,7 +7,7 @@ public partial class  StacjaMeteo
     public required Guid Id { get; init; }
     public required int BusinessId { get; init; }
     public required string Name { get; set; }
-    public required DateOnly DataPomiaru { get; set; }
+    public required DateTime DataPomiaru { get; set; }
     public required int GodzinaPomiaru { get; set; }
     public required int Temperatura { get; set; }
     public required int PredkoscWiatru { get; set; }

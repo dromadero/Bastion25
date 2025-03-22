@@ -3,6 +3,7 @@ using Weather.Api.Mapping;
 using Weather.Api.Models;
 using Weather.Api.Repositories;
 using Weather.Api.Requests;
+using Weather.Api.Services;
 
 namespace Weather.Api.Controllers;
 
@@ -10,32 +11,32 @@ namespace Weather.Api.Controllers;
 //[Route("api/stacjameteo")]
 public class StacjaMeteoController : ControllerBase
 {
-    private readonly IMeteoRepository _repository;
+    private readonly IMeteoService _service;
 
-    public StacjaMeteoController(IMeteoRepository repository)
+    public StacjaMeteoController(IMeteoService service)
     {
-
-        _repository = repository;
-
+        _service = service;
     }
 
     [HttpPost(ApiEndpoints.Meteos.Create)]
     public async Task<IActionResult> Create(
-        [FromBody] CreateStacjaMeteoRequest request
+        [FromBody] CreateStacjaMeteoRequest request,
+        CancellationToken token
         )
     {
         var item = request.MapToStacjaMeteo();
 
-        var result = await _repository.CreateAsync(item);
+        var result = await _service.CreateAsync(item);
         return CreatedAtAction(nameof(Get), new { id = item.Id }, item);
         //return Created($"/api/stacjameteo/meteos/{item.Id}", item);
     }
 
 
     [HttpGet(ApiEndpoints.Meteos.Get)]
-    public async Task<IActionResult> Get([FromRoute] Guid id)
+    public async Task<IActionResult> Get([FromRoute] Guid id,
+         CancellationToken token)
     {
-        var item = await _repository.GetByIdAsync(id);
+        var item = await _service.GetByIdAsync(id);
         if (item is null)
         {
             return NotFound();
@@ -45,9 +46,9 @@ public class StacjaMeteoController : ControllerBase
     }
 
     [HttpGet(ApiEndpoints.Meteos.GetAll)]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(CancellationToken token)
     {
-        var items = await _repository.GetAllAsync();
+        var items = await _service.GetAllAsync();
 
         var response = items.MapToResponse();
         return Ok(response);
@@ -56,24 +57,25 @@ public class StacjaMeteoController : ControllerBase
     [HttpPut(ApiEndpoints.Meteos.Update)]
     public async Task<IActionResult> Update(
     [FromRoute] Guid id,
-    [FromBody] UpdateStacjaMeteoRequest request
+    [FromBody] UpdateStacjaMeteoRequest request,
+     CancellationToken token
         )
     {
         var item = request.MapToStacjaMeteo(id);
-        var result = await _repository.UpdateAsync(item);
+        var result = await _service.UpdateAsync(item);
 
-        if (!result)
+        if (result is null)
         {
             return NotFound();
         }
-        var response = item.MapToResponse();
+        var response = result.MapToResponse();
         return Ok(response);
     }
 
     [HttpDelete(ApiEndpoints.Meteos.Delete)]
-    public async Task<IActionResult> Delete([FromRoute] Guid id)
+    public async Task<IActionResult> Delete([FromRoute] Guid id, CancellationToken token)
     {
-        var item = await _repository.DeleteByIdAsync(id);
+        var item = await _service.DeleteByIdAsync(id, token);
         if (!item)
         {
             return NotFound();
