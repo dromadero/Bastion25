@@ -1,0 +1,6 @@
+@AppLoggerApi_HostAddress = http://localhost:5095
+
+GET {{AppLoggerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
