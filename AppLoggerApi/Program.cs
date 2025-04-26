@@ -1,5 +1,7 @@
 using AppLoggerApi.Data;
+using AppLoggerApi.Mapping;
 using AppLoggerApi.Model;
+using AppLoggerApi.Model.Dto;
 using AppLoggerApi.Services;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
@@ -91,8 +93,10 @@ app.MapGet("/applogs/{appid}", async (string appid, ILoggerAppService service) =
 
 
 app.MapPost("/applogs",
-    async (LogItem item, ILoggerAppService service) =>
+    async (CreateLogItemRequestDto itemDto, ILoggerAppService service) =>
     {
+        var item = itemDto.MapToItem();
+
         var created = await service.CreateAsync(item, default);
 
         if (!created)
@@ -103,6 +107,15 @@ app.MapPost("/applogs",
 
     })
 .Accepts<LogItem>("application/json");
+
+
+app.MapDelete("applogs/{id}", async (int id, ILoggerAppService service) =>
+{
+    var deleted = await service.DeleteAsync(id);
+    return deleted ? Results.NoContent() : Results.NotFound();
+})
+.WithName("DeleteAppLog").Produces(204).Produces(404);
+
 
 
 app.MapGet("/", () => "Hello world!!!!!")

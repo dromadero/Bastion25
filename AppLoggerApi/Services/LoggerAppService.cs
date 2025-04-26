@@ -31,11 +31,11 @@ public class LoggerAppService : ILoggerAppService
         return result > 0;
     }
 
-
-
-    public Task<bool> DeleteAsync(string isbn)
+    public async Task<bool> DeleteAsync(int id)
     {
-        throw new NotImplementedException();
+        using var connection = await _connectionFactory.CreateConnectionAsync();
+        var result = await connection.ExecuteAsync("DELETE FROM AppLogs WHERE Id = @Id", new {Id = id }  );
+        return result > 0;
     }
 
     public async Task<IEnumerable<string>> GetAllApps()
@@ -66,6 +66,6 @@ public class LoggerAppService : ILoggerAppService
         return await connection.QueryAsync<LogItem>(new CommandDefinition(
             """
             SELECT * FROM AppLogs WHERE BusinessId LIKE '%' || @SearchTerm || '%'
-            """,  new { SearchTerm = appBusinnessId }));
+            """, new { SearchTerm = appBusinnessId }));
     }
 }

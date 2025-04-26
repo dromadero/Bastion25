@@ -2,6 +2,8 @@
 
 public class LogItem
 {
+    public int? Id { get; set; }
+
     public string BusinessId { get; set; } = default!;
 
     public string Message { get; set; } = default!;
