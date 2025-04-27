@@ -11,6 +11,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["DataCollector/DataCollector.csproj", "DataCollector/"]
+COPY ["Bastion.Common/Bastion.Common.csproj", "Bastion.Common/"]
 RUN dotnet restore "./DataCollector/DataCollector.csproj"
 COPY . .
 WORKDIR "/src/DataCollector"
