@@ -1,0 +1,6 @@
+@FxApi_HostAddress = http://localhost:5219
+
+GET {{FxApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
