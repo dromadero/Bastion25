@@ -38,6 +38,14 @@ public class LoggerAppService : ILoggerAppService
         return result > 0;
     }
 
+    public async Task<bool> DeleteAsyncByAppId(string appId)
+    {
+        using var connection = await _connectionFactory.CreateConnectionAsync();
+        var result = await connection.ExecuteAsync("DELETE FROM AppLogs WHERE BusinessId = @BusinessId", 
+            new { BusinessId = appId });
+        return result > 0;
+    }
+
     public async Task<IEnumerable<string>> GetAllApps()
     {
         using var connection = await _connectionFactory.CreateConnectionAsync();

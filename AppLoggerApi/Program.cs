@@ -117,6 +117,13 @@ app.MapDelete("applogs/{id}", async (int id, ILoggerAppService service) =>
 .WithName("DeleteAppLog").Produces(204).Produces(404);
 
 
+app.MapDelete("applogs/app/{appId}", async (string appId, ILoggerAppService service) =>
+{
+    var deleted = await service.DeleteAsyncByAppId(appId);
+    return deleted ? Results.NoContent() : Results.NotFound();
+})
+.WithName("DeleteByAppId").Produces(204).Produces(404);
+
 
 app.MapGet("/", () => "Hello world!!!!!")
 .WithSummary("This is a summary.")

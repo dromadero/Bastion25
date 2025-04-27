@@ -13,4 +13,6 @@ public interface ILoggerAppService
     public Task<IEnumerable<LogItem>> GetByAppIdAsync(string searchTerm); 
 
     public Task<bool> DeleteAsync(int id);
+
+    public Task<bool> DeleteAsyncByAppId(string appId);
 }
