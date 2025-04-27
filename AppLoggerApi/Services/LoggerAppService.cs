@@ -65,7 +65,7 @@ public class LoggerAppService : ILoggerAppService
         using var connection = await _connectionFactory.CreateConnectionAsync();
         return await connection.QueryAsync<LogItem>(new CommandDefinition(
             """
-            SELECT * FROM AppLogs WHERE BusinessId LIKE '%' || @SearchTerm || '%'
+            SELECT * FROM AppLogs WHERE BusinessId LIKE '%' || @SearchTerm || '%' ORDER BY CreatedDate DESC
             """, new { SearchTerm = appBusinnessId }));
     }
 }
