@@ -1,30 +1,50 @@
 ﻿using FxApi.Model;
 using FxApi.Model.Fcs;
+using System.Collections.Generic;
 using System.Globalization;
 
 namespace FxApi.Mapping;
 
 public static class LogItemMapping
 {
-    public static Candle MapToCandle(this FcsCandle fcs)
+    public static Candle MapToCandle(this FcsCandleData fcs)
     {
         return new Candle(
-            Double.Parse(fcs.o, CultureInfo.InvariantCulture), 
+            Double.Parse(fcs.o, CultureInfo.InvariantCulture),
             Double.Parse(fcs.h, CultureInfo.InvariantCulture),
-            Double.Parse(fcs.l, CultureInfo.InvariantCulture),  
-            Double.Parse(fcs.c, CultureInfo.InvariantCulture), 
-            fcs.v, 
-            fcs.t, 
+            Double.Parse(fcs.l, CultureInfo.InvariantCulture),
+            Double.Parse(fcs.c, CultureInfo.InvariantCulture),
+            string.Empty,
+            fcs.t,
             fcs.tm
             );
-
-            //o = Double.Parse(fcs.o),
-            //h = Double.Parse(fcs.h),
-            //l = Double.Parse(fcs.l),
-            //c = Double.Parse(fcs.c),
-            //t = fcs.t,
-            //tm = fcs.tm,
-            //v = fcs.v 
     }
 
+    public static Candle MapToCandle(this FcsHistoryData fcs)
+    {
+        return new Candle(
+            Double.Parse(fcs.o, CultureInfo.InvariantCulture),
+            Double.Parse(fcs.h, CultureInfo.InvariantCulture),
+            Double.Parse(fcs.l, CultureInfo.InvariantCulture),
+            Double.Parse(fcs.c, CultureInfo.InvariantCulture),
+            string.Empty,
+            fcs.t,
+            fcs.tm
+            );
+    }
+
+
+    public static List<Candle> MapToCandleList(this List<FcsHistoryData> list)
+    {
+        List<Candle> result = new List<Candle>();
+        result = list.Select(c => c.MapToCandle()).ToList();
+        return result; 
+    }
+
+    public static List<Candle> MapToCandleList(this List<FcsCandleData> list)
+    {
+        List<Candle> result = new List<Candle>();
+        result = list.Select(c => c.MapToCandle()).ToList();
+        return result;
+    }
 }

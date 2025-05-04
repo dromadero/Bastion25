@@ -1,4 +1,6 @@
-﻿using FxApi.Model.Fcs;
+﻿using FxApi.Model;
+using FxApi.Model.Fcs;
+using System.Threading.Tasks;
 
 namespace FxApi.Data;
 
@@ -13,26 +15,32 @@ public class MarketContext : IMarketContext
         EnsureDictionary(symbol, period);
     }
 
-    public void AddRange(string symbol, string period, Dictionary<string, FcsCandle> data)
+    public async Task AddRange(string symbol, string period, List<Candle> data)
     {
         EnsureDictionary(symbol, period);
         marketDictionary[(symbol, period)].AddRange(data);
     }
 
-    public bool AddRecord(string symbol, string period, FcsCandle data)
+    public async Task<bool> AddRecord(string symbol, string period, Candle data)
     {
         EnsureDictionary(symbol, period);
-        if (!IsHistoryRequired(symbol, period))
+        if (!await IsHistoryRequired(symbol, period))
         {
-            marketDictionary[(symbol, period)].AddValue(data);
-            return true;
+            return marketDictionary[(symbol, period)].AddValue(data);
         }
         return false;
     }
 
-    public bool IsHistoryRequired(string symbol, string period)
+    public async Task<bool> IsHistoryRequired(string symbol, string period)
     {
-        return marketDictionary[(symbol, period)].Data.Count > 40;
+        var result = marketDictionary.TryGetValue((symbol, period), out var symbolValue);
+
+        if(result  && symbolValue is not null)
+        {
+            return symbolValue.Data.Count > 0;
+        }
+        return false;
+        //return marketDictionary[(symbol, period)].Data.Count > 40;
     }
 
     private void EnsureDictionary(string symbol, string period)
@@ -43,6 +51,7 @@ public class MarketContext : IMarketContext
         }
     }
 
+ 
 }
 
  

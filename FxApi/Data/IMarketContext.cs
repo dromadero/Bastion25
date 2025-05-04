@@ -1,11 +1,12 @@
-﻿using FxApi.Model.Fcs;
+﻿using FxApi.Model;
+using FxApi.Model.Fcs;
 
 namespace FxApi.Data;
 
 public interface IMarketContext
 {
-    void AddRange(string symbol, string period, Dictionary<string, FcsCandle> data);
-    bool AddRecord(string symbol, string period, FcsCandle data);
+    Task AddRange(string symbol, string period, List<Candle> data);
+    Task<bool> AddRecord(string symbol, string period, Candle data);
     void InitMarketSymbol(string symbol, string period);
-    bool IsHistoryRequired(string symbol, string period);
+    Task<bool> IsHistoryRequired(string symbol, string period);
 }

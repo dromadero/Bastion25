@@ -2,12 +2,11 @@
 
 namespace FxApi.Model.Fcs;
 
-public record  FcsCandle(
+public record  FcsBaseCandleData(
     string o,
     string h,
     string l,
     string c,
-    string v,
     int t,
     string tm
     );

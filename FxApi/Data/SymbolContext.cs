@@ -25,18 +25,25 @@ public class SymbolContext
         Symbol = symbol;
     }
 
-    public void AddValue(FcsCandle candle)
+    public bool AddValue(Candle candle)
     {
-        _dataDictionary.TryAdd(candle.t, candle.MapToCandle());
+        return _dataDictionary.TryAdd(candle.t, candle);
     }
 
-    public void AddRange(Dictionary<string, FcsCandle> data)
+    public void AddRange(List<Candle> data)
     {
         foreach (var item in data)
         {
-            AddValue(item.Value);
+            AddValue(item);
         }
     }
 
+    //public void AddRange(Dictionary<string, FcsHistoryData> data)
+    //{
+    //    foreach (var item in data)
+    //    {
+    //        AddValue(item.Value);
+    //    }
+    //}
 
 }

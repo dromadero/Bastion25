@@ -1,11 +1,10 @@
 ﻿namespace FxApi.Model.Fcs;
 
-public record Root(
+public record RootData(
     bool status,
     int code,
     string msg,
-    Dictionary<string, FcsCandle> response,
-    Info info
+    InfoData info
     );
 
 

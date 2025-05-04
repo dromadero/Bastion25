@@ -1,6 +1,6 @@
 ﻿namespace FxApi.Model.Fcs;
 
-public record Info(
+public record InfoData(
     string id,
     string @decimal,
     string symbol ,
