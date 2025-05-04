@@ -37,9 +37,40 @@ var summaries = new[]
 };
 
 
+
+app.MapGet("/fxrun/symbol/{symbol}/period/{period}",
+    async (string symbol, string period, IFcsService service) =>
+{
+    await service.TryCollectData(symbol, period);
+
+    return Results.Ok("!!");
+})
+.WithOpenApi(x => new OpenApiOperation(x)
+{
+    Summary = "Execute FX RUN",
+    Description = "Returns information about all the available books from the Amy's library.",
+    Tags = new List<OpenApiTag> { new() { Name = "Amy's Library" } }
+});
+
+
+app.MapGet("/fxrun/symbol/{symbol}/period/{period}/get",
+    async (string symbol, string period, IFcsService service) =>
+    {
+        var data = await service.Get(symbol, period);
+
+        return Results.Ok(data);
+    })
+.WithOpenApi(x => new OpenApiOperation(x)
+{
+    Summary = "Execute FX RUN",
+    Description = "Returns information about all the available books from the Amy's library.",
+    Tags = new List<OpenApiTag> { new() { Name = "Amy's Library" } }
+});
+
+
 app.MapGet("/fx/run", async (IFcsService service) =>
 {
-    await service.Run();
+    //await service.AddHistory();
     return Results.Ok("!!");
 })
 .WithOpenApi(x => new OpenApiOperation(x)

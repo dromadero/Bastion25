@@ -2,6 +2,7 @@
 using FxApi.Data;
 using FxApi.DataSamples;
 using FxApi.Mapping;
+using FxApi.Model;
 using FxApi.Model.Fcs;
 using Microsoft.AspNetCore.WebUtilities;
 using System.Buffers.Text;
@@ -33,8 +34,19 @@ public class FcsService : IFcsService
         _httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
     }
 
+    public async Task TryCollectData(string symbol, string period)
+    {
+        if (await IsHistoryRequired(symbol, period))
+        {
+            await AddHistory(symbol, period);
+        }
+        await AddCurrentData(symbol, period);
+    }
 
- 
+    public async Task<List<Candle>> Get(string symbol, string period)
+    {
+        return await _marketContext.GetAsync(symbol, period);
+    }
 
     private async Task AddHistory(string symbol, string period)
     {
@@ -44,7 +56,6 @@ public class FcsService : IFcsService
                 { "access_key", _accessKey },
                 { "id", "1"}
             };
-
 
         string ApiURL_WithQuery = QueryHelpers.AddQueryString($"{_baseUrl}/api-v3/forex/history", queryParams);
 
@@ -58,14 +69,9 @@ public class FcsService : IFcsService
 
         if (data is not null && data.response.Count > 0)
         {
-            var list =  data.response.Values.ToList();
-            await _marketContext.AddRange(data.info.symbol, data.info.period, list.MapToCandleList());
+            var list = data.response.Values.ToList();
+            await _marketContext.AddRange(symbol, period, list.MapToCandleList());
         }
-        //}
-        //else
-        //{
-        //    throw new Exception("IsSuccessStatusCode false");
-        //}
     }
 
     private async Task AddCurrentData(string symbol, string period)
@@ -88,10 +94,17 @@ public class FcsService : IFcsService
 
         var data = JsonSerializer.Deserialize<CandleData>(responseJsonString);
 
-        if (data is not null)
+        if (data is not null && data.response.Count > 0)
         {
-            _marketContext.AddRange(data.info.symbol, data.info.period, data.response);
-        }       
+            var allowedSymbol = GetSymbolValue(symbol);
+
+            var filteredList = data.response
+                .Where(c => c.id == allowedSymbol)
+                .ToList()
+                .MapToCandleList();
+
+            await _marketContext.AddRange(symbol, period, filteredList);
+        }
     }
 
     /// <summary>
@@ -102,16 +115,6 @@ public class FcsService : IFcsService
     /// <returns></returns>
     private async Task<bool> IsHistoryRequired(string symbol, string period) => await _marketContext.IsHistoryRequired(symbol, period);
 
-    public async Task TryCollectData(string symbol, string period)
-    {
-        if (await IsHistoryRequired(symbol, period))
-        {
-            await AddHistory(symbol, period);
-        }
-        await AddCurrentData(symbol, period);
-    }
-
- 
 
     Task<bool> IFcsService.IsHistoryRequired(string symbol, string period)
     {
@@ -141,6 +144,5 @@ public class FcsService : IFcsService
                 return "1";
         }
     }
-
 
 }

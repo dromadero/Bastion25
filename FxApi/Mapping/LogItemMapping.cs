@@ -15,7 +15,7 @@ public static class LogItemMapping
             Double.Parse(fcs.l, CultureInfo.InvariantCulture),
             Double.Parse(fcs.c, CultureInfo.InvariantCulture),
             string.Empty,
-            fcs.t,
+            fcs.tt,
             fcs.tm
             );
     }
@@ -28,7 +28,7 @@ public static class LogItemMapping
             Double.Parse(fcs.l, CultureInfo.InvariantCulture),
             Double.Parse(fcs.c, CultureInfo.InvariantCulture),
             string.Empty,
-            fcs.t,
+            fcs.tt,
             fcs.tm
             );
     }

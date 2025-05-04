@@ -9,4 +9,5 @@ public interface IMarketContext
     Task<bool> AddRecord(string symbol, string period, Candle data);
     void InitMarketSymbol(string symbol, string period);
     Task<bool> IsHistoryRequired(string symbol, string period);
+    Task<List<Candle>> GetAsync(string symbol, string period);
 }

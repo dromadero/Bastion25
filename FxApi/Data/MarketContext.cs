@@ -21,6 +21,13 @@ public class MarketContext : IMarketContext
         marketDictionary[(symbol, period)].AddRange(data);
     }
 
+    public async Task<List<Candle>> GetAsync(string symbol, string period)
+    {
+        EnsureDictionary(symbol, period);
+        return marketDictionary[(symbol, period)].DataDictionary.Values.ToList();
+    }
+
+
     public async Task<bool> AddRecord(string symbol, string period, Candle data)
     {
         EnsureDictionary(symbol, period);
@@ -35,11 +42,11 @@ public class MarketContext : IMarketContext
     {
         var result = marketDictionary.TryGetValue((symbol, period), out var symbolValue);
 
-        if(result  && symbolValue is not null)
+        if (result && symbolValue is not null && symbolValue.DataDictionary.Count > 0)
         {
-            return symbolValue.Data.Count > 0;
+            return false;
         }
-        return false;
+        return true;
         //return marketDictionary[(symbol, period)].Data.Count > 40;
     }
 
@@ -51,7 +58,6 @@ public class MarketContext : IMarketContext
         }
     }
 
- 
+
 }
 
- 

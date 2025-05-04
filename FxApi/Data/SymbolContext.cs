@@ -9,7 +9,7 @@ public class SymbolContext
     public string Period { get; init; }
     public string Symbol { get; init; }
 
-    public Dictionary<int, Candle> Data
+    public Dictionary<int, Candle> DataDictionary
     {
         get
         {

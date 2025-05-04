@@ -7,7 +7,7 @@ public record  FcsBaseCandleData(
     string h,
     string l,
     string c,
-    int t,
+    int tt,
     string tm
     );
 
